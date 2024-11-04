@@ -1,0 +1,85 @@
+/* Contenedor principal con máximo ancho */
+.container-fluid.max-width-900 {
+  max-width: 900px;
+}
+
+/* Tabla */
+.table {
+  border: 1px solid #000;
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Encabezado de la tabla */
+.table thead {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.table thead th {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Filas de la tabla */
+.table tbody tr:hover {
+  background-color: #e8f5e9; /* Verde claro para el efecto hover */
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; /* Alterna color blanco */
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #ffffff; /* Alterna color ligeramente distinto */
+}
+
+/* Celda interactiva (clickable) */
+.clickable {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clickable:hover {
+  background-color: #d0f0c0; /* Verde suave */
+}
+
+/* Icono de eliminar */
+.clickable img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.clickable img:hover {
+  transform: scale(1.2); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Botón Crear Facultad */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Centrado de texto en celdas numéricas */
+.text-center {
+  text-align: center;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9em; /* Reducir tamaño de fuente en pantallas pequeñas */
+  }
+
+  .btn-success {
+    font-size: 0.9em;
+  }
+}
